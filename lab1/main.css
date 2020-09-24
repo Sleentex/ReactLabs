@@ -1,0 +1,71 @@
+/*
+flex-grow — определяет, сколько свободного места в контейнере переходит к элементу;
+flex-shrink — определяет, насколько будет сокращаться элемент, когда для всего не будет достаточно места;
+flex-basis — размер для элемента, установленный по умолчанию.
+
+0 flex-grow, 0 flex-shrink, auto flex-basis 
+*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+}
+
+nav {
+	flex: 1;
+	background-color: #9370DB;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex: 5;
+}
+
+header {
+	flex: 1;
+	background-color: #6495ED;
+}
+
+content {
+	display: flex;
+	flex: 4;
+}
+
+article {
+	flex: 3;
+}
+
+aside {
+	background-color: #DB7093;
+	flex: 1;
+}
+
+footer {
+	flex: 1;
+	background-color: #6495ED;
+}
+
+.pad10 {
+	padding: 10px;
+}
+
+
+@media screen and (max-device-width: 500px) {
+    body {  
+        flex-direction: column;
+    }
+
+    content {
+        flex-direction: column;
+    }
+}
