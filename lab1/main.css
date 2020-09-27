@@ -55,10 +55,9 @@ footer {
 	background-color: #6495ED;
 }
 
-.pad10 {
+.pad {
 	padding: 10px;
 }
-
 
 @media screen and (max-device-width: 500px) {
     body {  
